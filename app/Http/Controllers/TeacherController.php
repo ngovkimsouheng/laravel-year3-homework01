@@ -43,7 +43,7 @@ class TeacherController extends Controller
         ]);
 
         // 3. Redirect with success message
-        return redirect()->route('teachers.index')->with('addsuccess', 'Teacher added successfully.');
+        return redirect()->route('teachers.index')->with('addsuccess', 'Added successfully.');
     }
 
     public function edit(string $id)
@@ -66,7 +66,7 @@ class TeacherController extends Controller
         $teacher->update($request->all());
 
         // Redirect with success message
-        return redirect()->route('teachers.index')->with('updatesuccess', 'Teacher updated successfully.');
+        return redirect()->route('teachers.index')->with('updatesuccess', 'Updated successfully.');
     }
 
     public function destroy($id)
@@ -77,6 +77,6 @@ class TeacherController extends Controller
         $teacher->delete();
 
         return redirect()->route('teachers.index')
-            ->with('deletesuccess', 'Teacher deleted successfully.');
+            ->with('deletesuccess', 'Deleted successfully.');
     }
 }
