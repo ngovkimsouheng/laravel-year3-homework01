@@ -11,7 +11,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# Laravel CRUD Assignment - Teacher Management System
+# Laravel CRUD Assignment - Laravel
 
 ## 👤 Student Information
 
@@ -25,7 +25,7 @@
 
 ## 📝 Project Overview
 
-This project is a standard CRUD (Create, Read, Update, Delete) application developed using the Laravel framework. It manages a list of teachers stored in a MySQL database, demonstrating the use of Eloquent ORM, Controllers, and Blade components.
+This project is a standard CRUD (Create, Read, Update, Delete) application developed using the Laravel framework. It manages a list of teachers stored in a PostgreSql database.
 
 ### 🗄️ Database Schema
 
