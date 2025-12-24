@@ -11,14 +11,14 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# Laravel CRUD Assignment - Laravel
+# Laravel CRUD Homework -
 
 ## 👤 Student Information
 
+-   **Instructor:** Oum Saokosal
 -   **Name:** Ngov Kimsouheng
 -   **ID:** B20243095
 -   **Group:** Computer Science E3 Evening
--   **Instructor:** Oum Saokosal
 -   **Due Date:** 29/12/2025
 
 ---
