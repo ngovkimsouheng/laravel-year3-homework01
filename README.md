@@ -18,7 +18,7 @@
 -   **Instructor:** Oum Saokosal
 -   **Name:** Ngov Kimsouheng
 -   **ID:** B20243095
--   **Group:** Computer Science E3 Evening
+-   **Group:** Computer Science M1 Morning
 -   **Due Date:** 29/12/2025
 
 ---
