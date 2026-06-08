@@ -24,7 +24,7 @@
     </style>
 </head>
 <body class="bg-background-color">
-    <section class="container mx-auto max-md:px-4">
+    <section class="container max-w-7xl mx-auto max-md:px-4">
         <h1 class="text-start   text-[38px] font-bold text-blue-900
     ">Update Teacher</h1>
 
@@ -77,7 +77,7 @@
                 </form>
             </div>
         </div>
-
+</section>
         <script src=" https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
         </script>
         {{-- ionicons --}}

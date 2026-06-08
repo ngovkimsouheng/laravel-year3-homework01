@@ -10,36 +10,37 @@ class TeacherController extends Controller
     // public function index()
     // {
 
-
     //     $teachers = Teacher::paginate(5);
     //     return view("teachers.index", compact("teachers"));
     // }
     public function index()
     {
         // Sort by tid (ID) in ascending order so the positions never change
-        $teachers = Teacher::orderBy('tid', 'asc')->paginate(5);
+        $teachers = Teacher::orderBy('tid', 'asc')->paginate(8);
 
         // OR: Sort by newest created first
         // $teachers = Teacher::latest()->paginate(20);
 
-        return view("teachers.index", compact("teachers"));
+        return view('teachers.index', compact('teachers'));
     }
+
     public function create()
     {
         return view('teachers.create');
     }
+
     public function store(Request $request)
     {
         // 1. Validate both fields
         $request->validate([
             'full_name' => 'required|string|max:255',
-            'tel'       => 'required|min:8|max:20',
+            'tel' => 'required|min:8|max:20',
         ]);
 
         // 2. Create the record
         Teacher::create([
             'full_name' => $request->full_name,
-            'tel'       => $request->tel,
+            'tel' => $request->tel,
         ]);
 
         // 3. Redirect with success message
@@ -49,7 +50,8 @@ class TeacherController extends Controller
     public function edit(string $id)
     {
         $teacher = Teacher::findOrFail($id);
-        return view('teachers.edit', compact("teacher"));
+
+        return view('teachers.edit', compact('teacher'));
     }
 
     public function update(Request $request, string $id)
@@ -59,7 +61,7 @@ class TeacherController extends Controller
         // FIX: Use validation rules, not the input values
         $request->validate([
             'full_name' => 'required|string|max:255',
-            'tel'       => 'required|string|max:20',
+            'tel' => 'required|string|max:20',
         ]);
 
         // Update the record
